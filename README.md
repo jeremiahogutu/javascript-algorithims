@@ -15,7 +15,7 @@ reverse() method takes in an ARRAY reverses it. It does not take strings thus th
 
 	array.reverse();
 
-join() method takes in an ARRAY an array and joins it into a string
+join() method takes in an ARRAY and joins it into a string
 
 	var result = array.join("");
 
