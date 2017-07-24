@@ -19,7 +19,6 @@ join() method takes in an ARRAY an array and joins it into a string
 
 	var result = array.join("");
 
-return the result as a string
 
   return result;
 
