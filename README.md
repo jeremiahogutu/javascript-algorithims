@@ -19,11 +19,12 @@ join() method takes in an ARRAY an array and joins it into a string
 
 	var result = array.join("");
 
-finally return a string
+return the result as a string
 
   return result;
+
 }
 
-log out my results to the console
+logs out "olleh" to the console 
 
 console.log(reverseString("hello"));
