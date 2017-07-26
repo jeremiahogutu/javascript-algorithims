@@ -112,3 +112,75 @@ short explantion as to how the values being returned in the function above
 // return 4 times 6
 // return 5 times 24
 // return 120
+
+
+----------------------------------------------------------------------------------------
+# A function to check for palindromes 
+----------------------------------------------------------------------------------------
+
+
+A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+
+
+function palindrome(str) {
+  
+ Regex code explanation
+ \W_ matches any non-word characters including underscore
+ g matches all characters
+ 
+ Here we use the toLowercase to make every character lowercase. We then use method chaining to add the replace method which searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+  
+
+	str = str.toLowerCase().replace(/[\W_]/g, "");
+
+Here we use the split method to return an array of substrings. We then use method chaining to add the reverse method which revereses the order of elements in array. Finally we add the join method to which joins the elements of an array into a string, and returns the string
+  
+  return str === str.split("").reverse().join("")
+
+}
+
+logs out true
+
+console.log(palindrome("A man. A plan. A canal. Panama."));
+
+
+----------------------------------------------------------------------------------------
+# A function to check for palindromes using recursion
+----------------------------------------------------------------------------------------
+
+
+A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+
+
+function palindrome(str) {
+
+Here we use an if statement to deal with single letters so as to evaluate as true.
+
+  if (str.length <= 1) {
+
+  	return true;
+
+The slice() method returns the selected elements in an array, as a new array object.
+The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+
+
+compares the first letter and the last letter
+
+  } else if (str[0] === str.slice(-1)) {
+
+call the function again and compare the characters.
+
+  	return palindrome(str.slice(1, -1));
+
+  } else {
+
+  	return false;
+
+  }
+  
+}
+
+
+logs out true
+
+console.log(palindrome("eye"));
