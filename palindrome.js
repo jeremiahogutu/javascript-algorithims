@@ -21,7 +21,7 @@ function palindrome(str) {
 //compares the first letter and the last letter
   } else if (str[0] === str.slice(-1)) {
 
-//it the calls the function returning a subset of the word 
+//call the function again and compares the characters. 
   	return palindrome(str.slice(1, -1));
 
   } else {

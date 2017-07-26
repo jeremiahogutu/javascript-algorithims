@@ -168,7 +168,7 @@ compares the first letter and the last letter
 
   } else if (str[0] === str.slice(-1)) {
 
-call the function again and compare the characters.
+call the function again and compares the characters.
 
   	return palindrome(str.slice(1, -1));
 
