@@ -403,3 +403,28 @@ logs out the 5, 27, 39, 1001
 
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
 
+
+----------------------------------------------------------------------------------------
+#  A function that confirms the ending of a string
+----------------------------------------------------------------------------------------
+
+
+Check if a string (first argument, str) ends with the given target string (second argument, target).
+
+function confirmEnding(str, target) {
+
+The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+
+we use the regular expression /\w_/g to replace all non-word characters including underscores.
+
+  str = str.toLowerCase().replace(/\w_/g, "");
+
+we compare the values of the target and the last value  in the string
+
+  return target === str.slice(-Math.abs(target.length));
+
+}
+
+logs out true
+
+console.log(confirmEnding("Bastian", "n"));
