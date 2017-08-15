@@ -456,3 +456,19 @@ return an empty string if num is a negative number
 logs out abcabcabc
 
 console.log(repeatStringNumTimes("abc", 3));
+
+
+----------------------------------------------------------------------------------------
+#  Shorter way to repeat a string using a terenary operator
+----------------------------------------------------------------------------------------
+
+function repeatStringNumTimes(str, num) {
+
+The repeat() method returns a new string with a specified number of copies of the string it was called on.
+
+  return num > 0 ? str.repeat(num) : "";
+}
+
+logs out abcabcabc
+
+console.log(repeatStringNumTimes("abc", 3));
