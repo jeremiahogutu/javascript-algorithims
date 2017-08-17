@@ -24,6 +24,7 @@ function mutation(arr) {
     return true;
 }
 
-//returns false
 
-mutation(["hello", "hey"]);
+//logs out false
+
+console.log(mutation(["hello", "hey"]));
