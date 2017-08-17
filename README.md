@@ -1,4 +1,4 @@
-# Javascript Algorithims
+`````**__**``````````**__``````````**`````# Javascript Algorithims
 
 
 ----------------------------------------------------------------------------------------
@@ -505,7 +505,7 @@ console.log(truncateString("A-tisket a-tasket A green and yellow basket", 11));
 
 
 ----------------------------------------------------------------------------------------
-# A function tthat splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array
+# A function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array
 ----------------------------------------------------------------------------------------
 
 
@@ -538,3 +538,21 @@ increment the counter to avoid an infinite loop
 logs out [[0, 1, 2, 3], [4, 5, 6, 7], [8]]
 
 console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 4));
+
+
+----------------------------------------------------------------------------------------
+#  A function that chops off elements from the beginning of the array
+----------------------------------------------------------------------------------------
+
+function slasher(arr, howMany) {
+
+ The slice() method returns the selected elements in an array, as a new array object.
+ 
+ The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+
+    return arr.slice(howMany);
+}
+
+logs out [3]
+
+console.log(slasher([1, 2, 3], 2));
