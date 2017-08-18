@@ -11,4 +11,5 @@ function bouncer(arr) {
     return arr.filter(Boolean);
 }
 
+//logs out [7, "ate", 9]
 console.log(bouncer([7, "ate", "", false, 9]));
