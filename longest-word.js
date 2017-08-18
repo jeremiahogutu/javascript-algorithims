@@ -1,6 +1,6 @@
 /*
 * ----------------------------------------------------------------------------------------
-*  A function to find the length of the longest word using a for loop
+*  A function to find the length of the longest word.
 * ----------------------------------------------------------------------------------------
 */
 function findLongestWord(str) {
